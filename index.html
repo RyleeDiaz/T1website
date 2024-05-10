@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshTaste | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <style>
     body {
       background-color: #fffbee; 
-      text-align: center;
-      font-family: "Urbanist", sans-serif
-    }
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
     h1 {
       color: #505050;
@@ -22,6 +26,8 @@
       font-style: italic;
       font-size: 50px;
       margin: 3%;
+      font-family: "Roboto", sans-serif;
+  font-weight: 300;
     }
 
 li {
@@ -66,6 +72,17 @@ li a {
   color: #fffbee;
   float: left;
   text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.img-2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
 }
 
 * {box-sizing: border-box;}
@@ -84,6 +101,9 @@ img {vertical-align: middle;}
   margin-left: 25%;
   font-size: 100px;
   margin-top: -12%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .dot {
@@ -100,11 +120,6 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -114,14 +129,13 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-
 </style>
 
 <body>
   <!--logo image-->
   <img class="img-1" width="130" height="130" src="pngtree-fork-spoon-knife-and-plate-vector-illustration-with-line-hand-drawn-png-image_2076761-removebg-preview.png">
   <!--navbar-->  
-   <nav> 
+   <nav class="roboto-thin"> 
     <br>
         <li><a href="familyrecipes.html">Family Recipes</a></li>
         <li><a href="foodgroups.html">Food Groups</a></li>
@@ -143,19 +157,19 @@ img {vertical-align: middle;}
 
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src="slideshow1.jpg" style="width: 95%">
+    <img src="slideshow1.jpg" style="width:100%">
     <div class="text">The key to a</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src="slideshow2.jpg" style="width:95%">
+    <img src="slideshow2.jpg" style="width:100%">
     <div class="text">healthy diet</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src="slideshow3.jpeg" style="width:95%">
+    <img src="slideshow3.jpeg" style="width:100%">
     <div class="text">is loving it!</div>
   </div>
   
@@ -186,7 +200,7 @@ img {vertical-align: middle;}
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
     }
     </script>
 
