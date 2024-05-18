@@ -48,40 +48,62 @@ li a {
   float: left
 }
 
-div.scroll-container {
-  background-color: #fcf1dc;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
+* {
+  box-sizing: border-box;
 }
 
-div.scroll-container img {
-  padding: 10px;
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
    </style>
 
 <body>
     <img  class="logo" weight="130" height="130" src="pngtree-fork-spoon-knife-and-plate-vector-illustration-with-line-hand-drawn-png-image_2076761-removebg-preview.png">
-    <nav>
-        <br>
-        <li><a href="familyrecipes.html">Family Recipes</a></li>
-        <li><a href="foodgroups.html">Food Groups</a>
-        <li><a href="index.html">Home</a></li>
-    </nav>
+   
+    <nav class="roboto-thin">
+      <br>
+      <li><a href="familyrecipes.html">Family Recipes</a></li>
+      <li><a href="foodgroups.html">Food Groups</a>
+      <li><a href="index.html">Home</a></li>
+  </nav>
+
     <br>
     <br>
 
-    <p style="font-size: 50px; margin-left: -60%; color: #505050;">Family Recipes</p>
+    <p style="font-size: 50px; margin-left: -60%; color: #505050;">Popular Family Recipes</p>
 
-      <div class="scroll-container">
-        <a href="pestopasta.html"><img src="pestopasta.jpg" alt="PestoPasta" width="400" height="400">
-        <a href="honeysoytofu.html"><img src="honeysoytofu.jpg" alt="HoneySoyTofuStirFry" width="400" height="400">
-        <a href="onepot.html"><img src="onepot.jpg" alt="ChickenVegetablesOnePot" width="400" height="400">
-        <a href="pizzasliders.html"><img src="pizzasliders.webp" alt="PizzaSliders" width="400" height="400">
-        <a href="thainoodles.html"><img src="thainoodles.jpg" alt="ThaiNoodles" width="400" height="400">
-        <a href="tacos.html"><img src="tacos.webp" alt="LunchTacos" width="400" height="400">
+    <div class="row">
+      <div class="column">
+        <a href="pestopasta.html"><img src="pestopasta.jpg" alt="PestoPasta" style="width:90%">
       </div>
-
+      <div class="column">
+        <a href="honeysoytofu.html"><img src="honeysoytofu.jpg" alt="HoneySoyTofuStirFry" style="width:90%">
+      </div>
+      <div class="column">
+        <a href="onepot.html"><img src="onepot.jpg" alt="ChickenVegetablesOnePot" style="width:90%">
+      </div>
+        
+        <br> <br> <br> <br>
+        
+        <div class="column">
+        <a href="pizzasliders.html"><img src="pizzasliders.webp" alt="PizzaSliders" style="width:90%">
+      </div>
+          <div class="column">
+        <a href="thainoodles.html"><img src="thainoodles.jpg" alt="ThaiNoodles" style="width:90%">
+      </div>
+            <div class="column">
+        <a href="tacos.html"><img src="tacos.webp" alt="LunchTacos" style="width:90%">
+      </div>
+    </div>
 </body>
 </html>
