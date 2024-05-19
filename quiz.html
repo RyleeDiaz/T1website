@@ -56,5 +56,119 @@ li a {
             <li><a href="foodgroups.html">Food Groups</a></li>
             <li><a href="index.html">Home</a></li>
         </nav>
+
+        <br><br><br><br><br>
+
+       <!--quiz--> 
+        Q1. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question1">fruits and vegetables <br>
+<input type="radio" name="question1">confectionary <br>
+<input type="radio" name="question1" id="correct1">grains and cereals <br>
+<input type="radio" name="question1">dairy producuts <br><br>
+
+Q2. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question2">fruits and vegetables <br>
+<input type="radio" name="question2" id="correct2">confectionary <br>
+<input type="radio" name="question2">grains and cereals <br>
+<input type="radio" name="question2">dairy producuts <br><br>
+
+Q3. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question3">fruits and vegetables <br>
+<input type="radio" name="question3">confectionary <br>
+<input type="radio" name="question3">grains and cereals <br>
+<input type="radio" name="question3" id="correct3">dairy producuts <br><br>
+
+Q4. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question4">fruits and vegetables <br>
+<input type="radio" name="question4">confectionary <br>
+<input type="radio" name="question4">grains and cereals <br>
+<input type="radio" name="question4" id="correct4">dairy producuts <br><br>
+
+Q5. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question5" id="correct5">fruits and vegetables <br>
+<input type="radio" name="question5">confectionary <br>
+<input type="radio" name="question5">grains and cereals <br>
+<input type="radio" name="question5">dairy producuts <br><br>
+
+Q6. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question6">fruits and vegetables <br>
+<input type="radio" name="question6" id="correct6">confectionary <br>
+<input type="radio" name="questio6">grains and cereals <br>
+<input type="radio" name="question6">dairy producuts <br><br>
+
+Q7. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question7">fruits and vegetables <br>
+<input type="radio" name="question7" id="correct7">confectionary <br>
+<input type="radio" name="question7">grains and cereals <br>
+<input type="radio" name="question7">dairy producuts <br><br>
+
+Q8. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question8">fruits and vegetables <br>
+<input type="radio" name="question8">confectionary <br>
+<input type="radio" name="question8">grains and cereals <br>
+<input type="radio" name="question8" id="correct8">dairy producuts <br><br>
+
+Q9. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question9" id="correct9">fruits and vegetables <br>
+<input type="radio" name="question9">confectionary <br>
+<input type="radio" name="question9">grains and cereals <br>
+<input type="radio" name="question9">dairy producuts <br><br>
+
+Q10. what is the most important food group on the pyramid? <br>
+<input type="radio" name="question10">fruits and vegetables <br>
+<input type="radio" name="question10" id="correct10">confectionary <br>
+<input type="radio" name="question10">grains and cereals <br>
+<input type="radio" name="question10">dairy producuts <br><br>
+
+<input type="submit" name="submit" value="Submit Quiz" onclick="result()">
+
+<script type="text/javascript">
+    function result() {
+        var score="0";
+        if (document.getElementById('correct1').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct2').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct3').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct4').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct5').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct6').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct7').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct8').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct9').checked) 
+        {
+            score++;
+        }
+        if (document.getElementById('correct10').checked) 
+        {
+            score++;
+        }
+        alert("your score is:"+score);
+    }
+
+</script>
+
 </body>
 </html>
