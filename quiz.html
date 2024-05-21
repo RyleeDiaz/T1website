@@ -11,12 +11,10 @@
 <style>
      body {
       background-color: #fffbee; 
-}
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
+      font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+  text-align: center;
 }
 
 li {
@@ -43,6 +41,18 @@ li a {
   float: left;
   color: #fffbee;
 }
+
+p {
+    font-size: 60px;
+}
+
+p1 {
+    font-size: 30px;
+}
+
+.quiz {
+    font-size: 20px;
+}
  
 </style>
 
@@ -59,15 +69,16 @@ li a {
 
         <br><br><br>
 
-<h1>Food Group Quiz!</h1>
-<h2>Suprise! This quiz is filled with questions about the Food Group page. 
+<p>Food Group Quiz!</p>
+<p1>Suprise! This quiz is filled with questions about the Food Group page. 
     Take this quiz to figure out if you have enough knowledge about food groups, 
     the recommended daily serving sizes, and some important health benefits
- </h2>
+</p1>
 
-<br><br>
+<br><br><br><br>
 
        <!--quiz--> 
+       <div class="quiz">
         Q1. how many layers are there to the 'Fresh Taste' food pyramid<br>
 <input type="radio" name="question1">4 <br>
 <input type="radio" name="question1" id="correct1">5 <br>
@@ -127,8 +138,10 @@ Q10. what is the least important group on the food group pyramid?<br>
 <input type="radio" name="question10" id="correct10">confectionary<br>
 <input type="radio" name="question10">Protein<br>
 <input type="radio" name="question10">dairy produce<br><br>
+</div>
 
 <input type="submit" name="submit" value="Submit Quiz" onclick="result()">
+
 
 <script type="text/javascript">
     function result() {
@@ -173,7 +186,7 @@ Q10. what is the least important group on the food group pyramid?<br>
         {
             score++;
         }
-        alert("your score is:"+score);
+        alert("your score is : "+score);
     }
 
 </script>
